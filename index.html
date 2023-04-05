@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student-management-system</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <div class="big-container">
+        <h1>Student Management CRUD</h1>
+        <form action="" method="" class="formCl">
+
+            <input type="text" id="username_inp" placeholder="Name" required>
+            <input type="email" id="email_inp" placeholder="Email" required>
+
+            <input type="number" id="GPA_inp" placeholder="GPA" required>
+
+            <input type="number" id="age_inp" placeholder="AGE" required>
+
+            <input type="text" id="degree_inp" placeholder="degree" required>
+
+        </form>
+
+        <button type="submit" id="submit" onclick="addStudent()">Add Student</button>
+
+        <div>
+            <input type="search" id="serching" placeholder="Search by name,email or degree" onkeyup="search()">
+        </div>
+
+        <!-- border="2" -->
+        <table>
+            <thead id="thead">
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+
+            <tbody id="table_body">
+                <!-- <tr id="tr_id">
+                    <td>1</td>
+                    <td>name mohd</td>
+                    <td>emal id</td>
+                    <td>30</td>
+                    <td>7.8</td>
+                    <td class="degree">
+                        <div>${student[key]}</div>
+                        <div id="icon">
+                            <span class="material-icons" onClick="edit(${student['ID']})">delete</span>
+                            <span class="material-icons" onClick="del(${student['ID']})" >add_task</span>
+                        </div>
+                    </td>
+                </tr>  -->
+
+                <!-- <tr>
+                    <td>1</td>
+                    <td>name mohd</td>
+                    <td>emal id</td>
+                    <td>30</td>
+                    <td>7.8</td>
+                    <td class="degree">
+                        <div>B .tech</div>
+                        <div id="icon">
+                            <span class="material-icons">delete</span>
+                            <span class="material-icons">add_task</span>
+
+                        </div>
+                    </td>
+                </tr> -->
+
+
+            </tbody>
+           
+        </table>
+        <!-- <div class="last"></div> -->
+
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
